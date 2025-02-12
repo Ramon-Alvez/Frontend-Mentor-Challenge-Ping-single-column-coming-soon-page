@@ -6,3 +6,23 @@ html
     font-family: 'Libre Franklin', sans-serif;
     font-size: 62.5%;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+/* Header Style */
+.container .header
+{
+    text-align: center;
+    padding: 7rem 0;
+}
+/* Active state */
+.container .header .logo:hover
+{
+    transition: 0.2s ease-in-out;
+    transform: scale(1.02);
+}
