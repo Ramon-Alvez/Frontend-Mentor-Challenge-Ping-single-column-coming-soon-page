@@ -3,7 +3,7 @@
 
 html
 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: var(--Font);
     font-size: 62.5%;
 }
 
@@ -49,4 +49,59 @@ body {
     font-size: var(--FontSize);
     color: var(--Neutral2);
     padding: 2rem;
+}
+
+/* Form Style */
+.container .content #form
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem;
+}
+#form .input-box .input
+{
+    padding: 2rem 3rem;
+    width: 42rem;
+    height: 6rem;
+    border: 0.1rem solid var(--Neutral1);
+    border-radius: var(--BorderRadius);
+    font-size: calc(var(--FontSize) * 0.8);
+}
+#form .input-box .input::placeholder
+{
+    font-family: var(--Font);
+    color: var(--Neutral1);
+}
+#form .submit-bttn
+{
+    padding: 2rem;
+    font-family: var(--Font);
+    font-weight: 600;
+    font-size: calc(var(--FontSize) * 0.8);
+    color: #fff;
+    background-color: var(--Primary);
+    width: 20rem;
+    height: 6rem;
+    border: none;
+    border-radius: var(--BorderRadius);
+    cursor: pointer;
+    box-shadow: 0 1rem 1rem -0.3rem var(--Secondary1);
+}
+#form .submit-bttn:hover
+{
+    transition: 0.3s ease-in-out;
+    opacity: 0.75;
+}
+#form .input-box .error
+{
+    display: block;
+    color: var(--Secondary2);
+    text-align: left;
+    padding-top: 0.8rem;
+    padding-left: 3.2rem;
+    font-style: italic;
+    font-size: calc(var(--FontSize) * 0.6);
 }
