@@ -1,0 +1,42 @@
+@media screen and (max-width: 700px) {
+
+    /* Header Style */
+    .container .header .logo
+    {
+        width: 8rem;
+    }
+
+    /* Content Style */
+    .container .content
+    {
+        padding: 0 2rem;
+    }
+    .container .content .title
+    {
+        font-size: calc(var(--FontSize) * 1.15);
+    }
+    .container .content .text
+    {
+        font-size: calc(var(--FontSize) * 0.7);
+    }
+
+    /* Form Style */
+    .container .content #form
+    {
+        flex-wrap: wrap;
+    }
+
+    /* Submit Button */
+    #form .submit-bttn
+    {
+        max-width: 42rem;
+        width: 100%;
+    }
+
+    /* Hero Mockup Style */
+    .container .hero
+    {
+        margin-bottom: 40%;
+    }
+
+}

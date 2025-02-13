@@ -12,10 +12,16 @@
 
     --Neutral1: hsl(0, 0%, 59%);
     --Neutral2: hsl(209, 33%, 12%);
+    --Neutral3: hsl(0, 0%, 82%); /* Footer (My choose) */
 
     /* ## Typography */
+
+    --Font: 'Libre Franklin', sans-serif;
 
     /* ### Body Copy */
 
     --FontSize: 2rem;
+
+    /* Style Default Values */
+    --BorderRadius: 3rem;
 }

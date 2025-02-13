@@ -17,7 +17,7 @@ body {
 }
 .container
 {
-    padding: 0 2rem;
+    padding: 0 3rem;
 }
 /* Header Style */
 .container .header
@@ -83,6 +83,8 @@ body {
     font-family: var(--Font);
     color: var(--Secondary1);
 }
+
+/* Submit Button */
 #form .submit-bttn
 {
     padding: 2rem;
@@ -179,7 +181,6 @@ body {
 .footer .attribution-container
 {
     background-color: var(--Neutral3);
-    
 }
 .footer .attribution 
 {
@@ -187,9 +188,15 @@ body {
     font-size: 1.1rem;
     text-align: center;
     color: var(--Neutral2);
+    cursor: default;
 }
 .attribution a 
 {
     color: var(--Primary);
     text-decoration: none;
+}
+.attribution a:hover
+{
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
 }

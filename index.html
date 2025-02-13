@@ -24,17 +24,8 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/variables.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivity.css">
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
 
   <body>
@@ -57,16 +48,20 @@
 
         <p class="text">Subscribe and get notified</p>
 
-        <form novalidate>
+        <form 
+          id="form" 
+          novalidate
+        >
           <div class="input-box">
             <input 
               class="input required"
               type="email" 
               name="email" 
               id="email"
+              placeholder="Your email address..."
             />
 
-            <span class="error">Please provide a valid email address</span>
+            <span class="error"></span>
           </div>
 
           <button 
@@ -90,19 +85,19 @@
     <footer class="footer">
       <ul class="media-container">
         <li class="media">
-          <a href="#" target="_blank">
+          <a href="#">
             <i class="fa-brands fa-facebook-f"></i>
           </a>
         </li>
 
         <li class="media">
-          <a href="#" target="_blank">
+          <a href="#">
             <i class="fa-brands fa-twitter"></i>
           </a>
         </li>
 
         <li class="media">
-          <a href="#" target="_blank">
+          <a href="#">
             <i class="fa-brands fa-instagram"></i>
           </a>
         </li>
@@ -112,12 +107,20 @@
         <p>&copy; Copyright Ping. All rights reserved.</p>
       </div>
 
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
+      <div class="attribution-container">
+        <p class="attribution">
+          Challenge by
+          <a 
+            href="https://www.frontendmentor.io?ref=challenge" 
+            target="_blank"
+          >Frontend Mentor</a>
+          . Coded by 
+          <a 
+            href="https://www.linkedin.com/in/ramon-alvez/"
+            target="_blank"
+          >Ramon Alves</a>.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
