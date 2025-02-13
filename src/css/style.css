@@ -17,7 +17,7 @@ body {
 }
 .container
 {
-    margin: 2rem;
+    padding: 0 2rem;
 }
 /* Header Style */
 .container .header
@@ -35,7 +35,6 @@ body {
 .container .content
 {
     cursor: default;
-    margin: 0 2rem;
 }
 .container .content .title
 {
@@ -77,6 +76,7 @@ body {
     border: 0.1rem solid var(--Secondary1);
     border-radius: var(--BorderRadius);
     font-size: calc(var(--FontSize) * 0.8);
+    outline: none;
 }
 #form .input-box .input::placeholder
 {
@@ -118,9 +118,78 @@ body {
 .container .hero
 {
     max-width: 64rem;
+    margin: 20% 0;
 }
 .hero .hero-img
 {
     width: 100%;
 }
 
+/* Footer Style */
+.footer
+{
+    color: var(--Neutral1);
+    width: 100%;
+}
+.footer .media-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+.footer .media-container .media
+{
+    font-size: calc(var(--FontSize) * 0.7);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid var(--Secondary1);
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+.media-container .media a
+{
+    color: var(--Primary);
+}
+/* Active state */
+.media-container .media:hover
+{
+    transition: 0.2s ease-in-out;
+    background-color: var(--Primary);
+    border-color: var(--Primary);
+}
+.media-container .media:hover a
+{
+    color: #fff;
+}
+
+/* Copyright container */
+.footer .copyright
+{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: calc(var(--FontSize) * 0.7);
+}
+
+/* Atrribuition (Frontend Mentor) */
+.footer .attribution-container
+{
+    background-color: var(--Neutral3);
+    
+}
+.footer .attribution 
+{
+    padding: 2rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--Neutral2);
+}
+.attribution a 
+{
+    color: var(--Primary);
+    text-decoration: none;
+}
