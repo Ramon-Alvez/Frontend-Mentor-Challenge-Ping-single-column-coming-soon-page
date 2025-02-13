@@ -19,7 +19,7 @@ function verifyEmail() {
     if (emailInput.value == '') 
     {
         addError()
-        errorSpan.innerText = 'Email cannot be empty'
+        errorSpan.innerText = 'Whoops! It looks like you forgot to add your email'
     }
     else if (!emailRegex.test(emailInput.value))
     {

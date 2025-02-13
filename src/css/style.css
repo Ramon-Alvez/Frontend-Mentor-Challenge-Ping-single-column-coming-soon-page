@@ -22,7 +22,10 @@ body {
 /* Header Style */
 .container .header
 {
-    padding: 7rem 0;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* Active state */
 .container .header .logo:hover
@@ -62,6 +65,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
+    padding-top: 2rem;
 }
 #form .input-box
 {
@@ -124,7 +128,7 @@ body {
 .container .hero
 {
     max-width: 64rem;
-    margin: 20% 0;
+    margin: 10% 0;
 }
 .hero .hero-img
 {
