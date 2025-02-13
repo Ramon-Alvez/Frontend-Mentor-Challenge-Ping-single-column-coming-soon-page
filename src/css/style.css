@@ -78,6 +78,10 @@ body {
     font-size: calc(var(--FontSize) * 0.8);
     outline: none;
 }
+#form .input-box .input.invalid
+{
+    border-color: var(--Secondary2);
+}
 #form .input-box .input::placeholder
 {
     font-family: var(--Font);
